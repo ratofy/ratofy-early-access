@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Figtree&family=Monoton&family=Poppins:wght@100;500&family=Righteous&display=swap');
+* {
+    font-family: 'Figtree', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(264.45deg, #FF7373 45.57%, #9599FF 93.73%);
+    opacity: 0.7;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    overflow-x: hidden;
+    opacity: 0.9;
+}
+
+.banner img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo img {
+    float: right;
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+
+.container {
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.formWrapper {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.formCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inputFields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inputFields input {
+    width: 100%;
+    height: 45px;
+    font-size: 1rem !important;
+    outline: none;
+    border-radius: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 0.5rem;
+    margin-left: 2px;
+    border: 2.4px solid #9599FF;
+    color: #c4c4c4;
+    font-size: 0.6rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+.inputFields input:focus {
+    border: 2.4px solid #FF7373;
+    color: #000;
+}
+
+.inputFields p {
+    color: #610C63;
+    padding: 0;
+    margin: 0;
+    padding-left: 1rem;
+    margin-top: 0.3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.submitButton input,
+.submitButton button,
+.submitButton a {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    background: #000;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 255, .2);
+    font-size: 1.1rem;
+    color: aliceblue;
+    transition: all ease 0.5s;
+    border: 1.5px solid #FF7373;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.submitButton button:hover,
+.submitButton input:hover,
+.submitButton a:hover {
+    background: linear-gradient(264.45deg, #FF7373 45.57%, #9599FF 93.73%);
+    color: #000;
+    font-size: 1.3rem;
+    transform: scale(1.01);
+    border: 1.5px solid #9599FF;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    margin-left: 1rem;
+    gap: 1rem;
+}
+
+.panel h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    transition: all 0.3 ease;
+    font-size: 1.5rem;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.heading {
+    border-bottom: 1px solid black;
+}
+
+.heading1 {
+    width: 100vw;
+    text-align: center;
+}
+
+.forgot p {
+    font-size: 1rem !important;
+}
+
+.nft {
+    height: 300px;
+}
+
+.nft img {
+    height: 100%;
+}
