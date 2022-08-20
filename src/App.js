@@ -49,6 +49,7 @@ function App() {
 
   const handleChange = (e)=>{
     e.preventDefault();
+    setMessage({username:"",email:""});
     const {name,value}=e.target;
     setUserData({...userData,[name]:value});
     //console.log(formValues);
