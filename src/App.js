@@ -1,9 +1,11 @@
+
 import {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import logo from './logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter ,faDiscord , faMedium} from '@fortawesome/free-brands-svg-icons'
 import styles from './styles/home.module.css'
+require('dotenv').config();
 
 function App() {
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ function App() {
     e.preventDefault();
     const {username,email} = userData;
    try{
-            const response= await fetch('http://localhost:5000/api/v1/auth/earlyaccess',{
+            const response= await fetch(`${process.env.HOST}auth/earlyaccess`,{
                 method:'POST',
                 headers: {
                 'Content-Type': 'application/json'
