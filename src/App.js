@@ -1,16 +1,17 @@
 
-import {useState} from 'react';
+import {useState,useContext} from 'react';
 import {useNavigate} from 'react-router-dom';
-import logo from './logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter ,faDiscord , faMedium} from '@fortawesome/free-brands-svg-icons'
 import styles from './styles/home.module.css'
-require('dotenv').config();
+import userContext from './context/userContext';
 
 function App() {
   const navigate = useNavigate();
   const[userData,setUserData] = useState({username:"",email:""});
   const[message,setMessage] = useState({username:"",email:""});
+  const {setLogin} = useContext(userContext);
+
 
   const handleSubmit = async(e)=>{
     e.preventDefault();
@@ -39,10 +40,12 @@ function App() {
               return;
             }
             
+            setLogin(true);
             navigate('/claim');
         }
         catch(error)
         {
+            setLogin(false);
             console.log(error);
             return;
         }

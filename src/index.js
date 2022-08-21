@@ -9,9 +9,11 @@ import './index.css';
 import App from './App';
 import Claim from './pages/claim'
 import reportWebVitals from './reportWebVitals';
+import UserStates from './context/userStates';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <UserStates>
   <BrowserRouter>
   <React.StrictMode>
      <Routes>
@@ -20,6 +22,7 @@ root.render(
     </Routes>
   </React.StrictMode>
   </BrowserRouter>
+  </UserStates>
 );
 
 // If you want to start measuring performance in your app, pass a function
