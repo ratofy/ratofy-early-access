@@ -56,10 +56,7 @@ export default function Claim() {
               <img src="./nft1.jpg" alt="" srcset="" />
           </div>
                               <div className={styles.formCard} onSubmit={handleSubmit}>
-                                  <div className={styles.submitButton}>
-                                      
-                                        <a href="https://gateway.ipfscdn.io/ipfs/QmUfp6thZQTmNKS6tzijJpxdoBe9X7spHwzRjUh3RPTAwF/edition-drop.html?contract=0xD8E4775451E2Ba750cC7C5ec596a04E2d2eeF549&chainId=137&tokenId=0&relayUrl=bdfe2b57-b2d3-4aed-b256-fb89f47ab5b2">claim NFT</a>
-                                  </div>
+                                  <div className={styles.submitButton}> <button onClick={()=>{console.log("Checking Wallet Connection")}}>Connect Wallet</button></div>
 
                                   <div className={styles.panel}>
                                     <div className={styles.heading}>
