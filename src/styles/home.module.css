@@ -119,10 +119,9 @@
 }
 
 .submitButton input,
-.submitButton button,
-.submitButton a {
+.submitButton button {
     height: 40px;
-    width: 100%;
+    width: 300px;
     padding: 5px;
     display: flex;
     margin-top: 1rem;
