@@ -52,22 +52,16 @@ export default function Claim() {
         <div className={styles.formWrapper}>
           <div className={styles.heading1}> <h1>Congratulations you have entered Ratofy!!</h1></div>
           
-          <div className={styles.nft}>
-              <img src="./nft1.jpg" alt="" srcset="" />
-          </div>
                               <div className={styles.formCard} onSubmit={handleSubmit}>
-                                  <div className={styles.submitButton}> <button onClick={()=>{console.log("Checking Wallet Connection")}}>Connect Wallet</button></div>
+                                  
+                                  
+                                    <iframe
+                                        src={"https://gateway.ipfscdn.io/ipfs/Qma5FgmS9s3hkQrURfG4XDnh5Dxp9Fx9ZjBYkPFUNdQwfi/edition-drop.html?contract=0xD8E4775451E2Ba750cC7C5ec596a04E2d2eeF549&chainId=137&tokenId=0&relayUrl=https%3A%2F%2Fapi.defender.openzeppelin.com%2Fautotasks%2F9c183054-706f-4f67-baf7-b9100b7c8dad%2Fruns%2Fwebhook%2Ff1498096-a68b-451c-87a0-c06af19a6be9%2F9v3ihuCMCVm3hCaPSVu8NJ"}
+                                        frameBorder="0"
+                                        className={styles.nftCard}
 
-                                  <div className={styles.panel}>
-                                    <div className={styles.heading}>
-                                      <h3>visit our socials</h3>
-                                    </div>
-                                    <div className={styles.icons}>
-                                      <FontAwesomeIcon  className={styles.icon}icon={faTwitter} onClick={handleGoogleSignIn} size="lg"/>
-                                      <FontAwesomeIcon  className={styles.icon}icon={faDiscord}  onClick={handleGithubSignIn} size="lg"/>
-                                      <FontAwesomeIcon  className={styles.icon}icon={faMedium}  onClick={handleGithubSignIn} size="lg"/>
-                                    </div>
-                                  </div>
+                                    ></iframe>
+                                  
                               </div>
                           </div>
       </div>

@@ -75,8 +75,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 .inputFields {
@@ -205,4 +205,11 @@
 
 .nft img {
     height: 100%;
+}
+
+.nftCard {
+    height: 500px;
+    width: 600px !important;
+    margin: 0;
+    padding: 0;
 }
