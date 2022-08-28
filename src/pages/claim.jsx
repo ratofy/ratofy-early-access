@@ -14,21 +14,6 @@ export default function Claim() {
     e.preventDefault();
     console.log(userData);
   }
-
-  const handleChange = (e)=>{
-    e.preventDefault();
-    const {name,value}=e.target;
-    setUserData({...userData,[name]:value});
-    //console.log(formValues);
-  }
-
-  const handleGoogleSignIn = ()=>{
-    console.log("google");
-  }
-  const handleGithubSignIn = ()=>{
-    console.log("github");
-  }
-
   useEffect(()=>{
     if(!login)
       navigate('/');
