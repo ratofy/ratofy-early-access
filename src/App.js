@@ -2,7 +2,8 @@
 import {useState,useContext} from 'react';
 import {useNavigate} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter ,faDiscord , faMedium} from '@fortawesome/free-brands-svg-icons'
+import { faTwitter ,faDiscord} from '@fortawesome/free-brands-svg-icons'
+import {faLink} from '@fortawesome/free-solid-svg-icons'
 import styles from './styles/home.module.css'
 import userContext from './context/userContext';
 
@@ -59,14 +60,7 @@ function App() {
     setUserData({...userData,[name]:value});
     //console.log(formValues);
   }
-
-  const handleGoogleSignIn = ()=>{
-    console.log("google");
-  }
-  const handleGithubSignIn = ()=>{
-    console.log("github");
-  }
-
+  
   return (
     <>
     <div className={styles.main}>  
@@ -100,9 +94,9 @@ function App() {
                                   </div>
                                   
                                   <div className={styles.icons}>
-                                    <FontAwesomeIcon  className={styles.icon}icon={faTwitter} onClick={handleGoogleSignIn} size="lg"/>
-                                    <FontAwesomeIcon  className={styles.icon}icon={faDiscord}  onClick={handleGithubSignIn} size="lg"/>
-                                    <FontAwesomeIcon  className={styles.icon}icon={faMedium}  onClick={handleGithubSignIn} size="lg"/>
+                                    <a href="https://twitter.com/ratofyDAO?t=e9dpGJ62jsigvtKnHwI9jA&s=09" target="_blank"><FontAwesomeIcon  className={styles.icon}icon={faTwitter}  size="lg"/></a>
+                                    <a href="https://discord.com/invite/hktNWHGpwN" target="_blank"><FontAwesomeIcon  className={styles.icon}icon={faDiscord}   size="lg"/></a>
+                                    <a href="https://ratofyverse.com/" target="_blank"><FontAwesomeIcon  className={styles.icon}icon={faLink}  size="lg"/></a>
                                   </div>
                                 </div>
                             </form>
