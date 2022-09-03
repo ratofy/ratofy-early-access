@@ -41,7 +41,7 @@ export default function Claim() {
                                   
                                   
                                     <iframe
-                                        src={"https://gateway.ipfscdn.io/ipfs/Qma5FgmS9s3hkQrURfG4XDnh5Dxp9Fx9ZjBYkPFUNdQwfi/edition-drop.html?contract=0x836AF3981BFC251a5E751768615574aB5D4D12E3&chainId=137&tokenId=0&relayUrl=https%3A%2F%2Fapi.defender.openzeppelin.com%2Fautotasks%2F9c183054-706f-4f67-baf7-b9100b7c8dad%2Fruns%2Fwebhook%2Ff1498096-a68b-451c-87a0-c06af19a6be9%2F9v3ihuCMCVm3hCaPSVu8NJ&theme=dark&primaryColor=purple"}
+                                        src="https://gateway.ipfscdn.io/ipfs/Qma5FgmS9s3hkQrURfG4XDnh5Dxp9Fx9ZjBYkPFUNdQwfi/edition-drop.html?contract=0x836AF3981BFC251a5E751768615574aB5D4D12E3&chainId=137&tokenId=0&relayUrl=https%3A%2F%2Fapi.defender.openzeppelin.com%2Fautotasks%2F9c183054-706f-4f67-baf7-b9100b7c8dad%2Fruns%2Fwebhook%2Ff1498096-a68b-451c-87a0-c06af19a6be9%2F9v3ihuCMCVm3hCaPSVu8NJ&theme=dark&primaryColor=purple"
                                         frameBorder={"0"}
                                         className={styles.nftCard}
 
