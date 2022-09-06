@@ -18,7 +18,7 @@ function App() {
     e.preventDefault();
     const {username,email} = userData;
    try{
-            const response= await fetch("http://Ratofyserverprod-env.eba-h5k2cpbt.ap-south-1.elasticbeanstalk.com/api/v1/auth/earlyaccess",{
+            const response= await fetch("http://ratofyserver-env-2.ap-south-1.elasticbeanstalk.com/api/v1/auth/earlyaccess",{
                 method:'POST',
                 headers: {
                 'Content-Type': 'application/json'
